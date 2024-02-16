@@ -12,7 +12,7 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getAll() {
-        return List.of(new User(1L, "bob@i.ua"), new User(2l, "alice@i.ua"));
+        return List.of(new User(1L, "bob@i.ua"), new User(2L, "alice@i.ua"));
     }
 
     @PostMapping("/users")
