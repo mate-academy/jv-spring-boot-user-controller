@@ -11,11 +11,3 @@ public class Application {
     }
 
 }
-
-
-/*
-{
-    "id": 4,
-    "email": "pasha@2000"
-}
- */
