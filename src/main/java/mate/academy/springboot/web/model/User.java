@@ -1,4 +1,9 @@
 package mate.academy.springboot.web.model;
 
-public record User(Long id, String email) {
+import lombok.Data;
+
+@Data
+public final class User {
+    private final Long id;
+    private final String email;
 }
