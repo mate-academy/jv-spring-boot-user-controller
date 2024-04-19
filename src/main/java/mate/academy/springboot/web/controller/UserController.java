@@ -15,15 +15,12 @@ public class UserController {
     @GetMapping
     @ResponseBody
     public List<User> getAll() {
-        return List.of(
-                new User(1L, "alice@gmail.com"),
-                new User(2L, "bob@gmail.com"));
+        return List.of(new User(1L, "bob@i.ua"), new User(2L, "alice@i.ua"));
     }
 
     @PostMapping
     @ResponseBody
     public String addUser(@RequestBody User user) {
-        return String.format("User successfully created to DB. "
-                + "Id: %s, email: %s", user.id(), user.email());
+        return String.format("User created. Id: %s, email: %s", user.id(), user.email());
     }
 }
