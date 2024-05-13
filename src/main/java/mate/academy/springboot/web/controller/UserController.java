@@ -20,5 +20,4 @@ public class UserController {
     public String updateUser(@RequestBody User user) {
         return String.format("User created. Id: %d, email: %s", user.id(), user.email());
     }
-
 }
