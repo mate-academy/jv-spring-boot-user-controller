@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
 @RequestMapping("/users")
+@RestController
 public class UserController {
 
     @GetMapping
@@ -19,6 +19,6 @@ public class UserController {
 
     @PostMapping
     public String create(@RequestBody User user) {
-        return "User created. Id: %s, email: %s".formatted(1L, "user@gmail.com");
+        return "User created. Id: %s, email: %s".formatted(user.id(), user.email());
     }
 }
