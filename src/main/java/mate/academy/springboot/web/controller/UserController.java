@@ -1,7 +1,6 @@
 package mate.academy.springboot.web.controller;
 
 import java.util.List;
-
 import mate.academy.springboot.web.model.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
