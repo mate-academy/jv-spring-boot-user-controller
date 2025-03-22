@@ -15,8 +15,8 @@ public class UserController {
     @GetMapping
     public List<User> getAll() {
         return List.of(
-                new User(1L, "anton322@gmail.com"),
-                new User(2L, "robert228@gmail.com")
+                new User(1L, "bob@i.ua"),
+                new User(2L, "alice@i.ua")
         );
     }
 
