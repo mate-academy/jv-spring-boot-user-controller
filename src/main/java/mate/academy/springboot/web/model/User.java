@@ -5,5 +5,4 @@ public record User(Long id, String email) {
         this.id = id;
         this.email = email;
     }
-    //code
 }
