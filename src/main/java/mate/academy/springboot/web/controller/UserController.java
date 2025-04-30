@@ -19,7 +19,7 @@ public class UserController {
     public List<User> getAllUsers() {
         return List.of(
                 new User(1L, "bob@i.ua"),
-                new User(2L, "alex@i.ua"));
+                new User(2L, "alice@i.ua"));
     }
 
     @PostMapping
