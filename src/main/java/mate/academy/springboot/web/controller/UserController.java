@@ -18,8 +18,8 @@ public class UserController {
     @GetMapping
     public List<User> getAllUsers() {
         return List.of(
-                new User(1L, "bob@gmail.com"),
-                new User(2L, "alex@gmail.com"));
+                new User(1L, "bob@i.ua"),
+                new User(2L, "alex@i.ua"));
     }
 
     @PostMapping
