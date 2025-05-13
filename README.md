@@ -13,6 +13,7 @@ set up the application and create the necessary endpoints.
     - GET: `/users` - will return the hardcoded list of two
       users: `List.of(new User(1L, "bob@i.ua"), new User(2L, "alice@i.ua"))`
     - POST: `/users` - will accept User object as an input data, and return the String in the following
+    - 
       format: `User created. Id: %s, email: %s`, where instead of `%s` the received user id 
     - and email should be provided
 
