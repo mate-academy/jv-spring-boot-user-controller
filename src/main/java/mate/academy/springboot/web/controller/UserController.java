@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping()
 public class UserController {
 
     @GetMapping("/users")
@@ -17,7 +17,7 @@ public class UserController {
         return List.of(new User(1L, "bob@i.ua"), new User(2L, "alice@i.ua"));
     }
 
-    @PostMapping("/add")
+    @PostMapping("/users")
     public String addUser(@RequestBody User user) {
         return "user was saved id: %s , email: %s".formatted(user.id(), user.email());
     }
