@@ -12,12 +12,14 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getAllUsers() {
-        return List.of(new User(1L, "bob@i.ua"), new User(2L, "alice@i.ua"));
+        return List.of(new User(1L, "bob@i.ua"),
+                new User(2L, "alice@i.ua"));
     }
 
     @PostMapping("/users")
     public String createUser(@RequestBody User user) {
-        return "User created. Id: %s, email: %s".formatted(user.id(), user.email());
+        return "User created. Id: %s, email: %s"
+                .formatted(user.id(), user.email());
     }
 
 }
