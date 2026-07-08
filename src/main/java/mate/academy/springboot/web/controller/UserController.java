@@ -18,6 +18,6 @@ public class UserController {
 
     @PostMapping
     public String save(@RequestBody User user) {
-        return String.format("ser created. Id: %s, email: %s", user.id(), user.email());
+        return String.format("User created. Id: %s, email: %s", user.id(), user.email());
     }
 }
