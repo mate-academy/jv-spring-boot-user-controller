@@ -1,25 +1,30 @@
 name: Java CI
+
 on:
-  - push
-  - pull_request  # Change from pull_request_target
+  push:
+  pull_request:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        # Remove the custom ref and repository parameters
+
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
           cache: maven
+
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
+
       - uses: mate-academy/auto-approve-action@v2
         if: ${{ github.event.pull_request && success() }}
         with:
           github-token: ${{ github.token }}
+
       - uses: mate-academy/auto-reject-action@v2
         if: ${{ github.event.pull_request && failure() }}
         with:
