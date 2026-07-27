@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/users")
 public class UserController {
-    // T
+    // Test
     @GetMapping
     public List<User> getAllUsers() {
         return List.of(new User(1L, "bob@i.ua"), new User(2L, "alice@i.ua"));
