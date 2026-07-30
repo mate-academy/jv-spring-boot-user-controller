@@ -22,6 +22,7 @@ public class UserController {
 
     @PostMapping
     public String create(@RequestBody User user) {
+
         return String.format("User created. Id: %s, email: %s", user.id(), user.email());
     }
 }
