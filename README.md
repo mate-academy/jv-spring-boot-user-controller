@@ -1,5 +1,7 @@
 # Implement a simple User Management REST API
 
+`mvn -DskipTests=false clean package`
+
 In this task, you are required to create a simple REST API for managing users. You will be working with Spring Boot to
 set up the application and create the necessary endpoints.
 
